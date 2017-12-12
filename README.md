@@ -41,6 +41,15 @@ To install on your own machine, follow the instructions below:
 * Current_Users
   * Users can PUT and DELETE reviews that they wrote. (REQUIRE USER_NAME --> Issue with faker reviews?)
 
+* Additional TODO (pick at least 2)
+  * Token-Based Authentication and Authorization
+  * Serialization
+  * API Versioning
+  * Using Swagger for Documentation
+  * Paginating an API
+  * Batching API calls
+  * Rate Limiting
+
 <!--
 ## Known Bugs:
 
