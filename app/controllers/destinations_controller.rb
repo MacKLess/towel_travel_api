@@ -2,9 +2,11 @@ class DestinationsController < ApplicationController
 
   def index
     planet = params[:planet]
-    binding.pry
-    @destinations = Destination.all
-    @destinations = Destination.search(planet)
+    if planet
+      @destinations = Destination.search(planet)
+    else
+      @destinations = Destination.all
+    end
     json_response(@destinations)
   end
 
