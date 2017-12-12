@@ -3,7 +3,8 @@ require 'rails_helper'
 describe "post a destination route", :type => :request do
 
   before do
-    post '/destinations', params: { :planet => 'Dangrabad', :location => 'Oglaroon', :locals => 'Nanites', :transporation => 'Starship Titanic', :review => 'Here I am, brain the size of a planet.', :author => 'Gag Halfrunt'}
+    # post FactoryBot.create(:destination)
+    post '/destinations', params: { :planet => 'Dangrabad', :location => 'Oglaroon', :locals => 'Nanites', :transportation => 'Starship Titanic', :review => 'Here I am, brain the size of a planet.', :author => 'Gag Halfrunt'}
   end
 
   it 'returns the planet name' do
