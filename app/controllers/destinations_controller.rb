@@ -2,8 +2,11 @@ class DestinationsController < ApplicationController
 
   def index
     planet = params[:planet]
+    location = params[:location]
     if planet
-      @destinations = Destination.search(planet)
+      @destinations = Destination.search_planet(planet)
+    elsif location
+      @destinations = Destination.search_location(location)
     else
       @destinations = Destination.all
     end
