@@ -31,15 +31,15 @@ To install on your own machine, follow the instructions below:
 
 ## Specifications
 
-* Users  
-  * All users may GET reviews about travel destinations. INDEX
-  * All users may POST reviews about travel destinations. NEW
-  * All users can GET reviews by location or planet. SEARCH
-  * All users can see most popular travel destinations by number of reviews. SORT by REVIEW #s
-  * All users can see most popular travel destinations by overall rating. RATING
-  * Users can look up random destinations for fun. RANDOM
-* Current_Users
-  * Users can PUT and DELETE reviews that they wrote. (REQUIRE USER_NAME --> Issue with faker reviews?)
+** Users  
+  **  All users may GET reviews about travel destinations. INDEX
+  ** All users may POST reviews about travel destinations. NEW
+  ** All users can GET reviews by location or planet. SEARCH
+  ** All users can see most popular travel destinations by number of reviews. SORT by REVIEW #s
+  ** All users can see most popular travel destinations by overall rating. RATING
+  ** Users can look up random destinations for fun. RANDOM
+** Current_Users
+  ** Users can PUT and DELETE reviews that they wrote. (REQUIRE USER_NAME --> Issue with faker reviews?)
 
 * Additional TODO (pick at least 2)
   * Token-Based Authentication and Authorization
