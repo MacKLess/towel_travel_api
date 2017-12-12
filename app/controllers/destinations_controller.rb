@@ -11,7 +11,7 @@ class DestinationsController < ApplicationController
   end
 
   def create
-    @destination = Destination.find(destination_params)
+    @destination = Destination.create!(destination_params)
     json_response(@destination, :created)
   end
 
@@ -35,6 +35,6 @@ class DestinationsController < ApplicationController
 
 private
   def destination_params
-    params.permit(:)
+    params.permit(:planet, :location, :locals, :transportation, :review, :author)
   end
 end
