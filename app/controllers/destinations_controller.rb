@@ -40,6 +40,6 @@ class DestinationsController < ApplicationController
 
 private
   def destination_params
-    params.permit(:planet, :location, :locals, :transportation, :review, :author)
+    params.permit(:planet, :location, :locals, :transportation)
   end
 end
