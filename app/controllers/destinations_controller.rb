@@ -25,7 +25,7 @@ class DestinationsController < ApplicationController
 
   def update
     @destination = Destination.find(params[:id])
-    if @destionation.update!(destination_params)
+    if @destination.update!(destination_params)
       render status: 200, json: {
         message: "Your destination has been updated successfully!"
       }
