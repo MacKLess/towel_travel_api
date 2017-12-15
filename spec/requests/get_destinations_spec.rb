@@ -3,7 +3,7 @@ require 'rails_helper'
 describe "get all destinations routes", :type => :request do
   let!(:destinations) { FactoryBot.create_list(:destination, 50)}
 
-  before { get '/destinations'}
+  before { get '/api/v1/destinations'}
 
   it 'returns all destinations' do
     expect(JSON.parse(response.body).size).to eq(50)
